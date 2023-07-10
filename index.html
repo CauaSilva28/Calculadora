@@ -11,35 +11,36 @@
     <div id="calculadora">
         <br>
         <h1>Calculadora</h1>
+        <p id="visordesligado">Desligada...</p>
         <p id="visor"></p>
         <center><table>
             <tr>
-                <td><button style="background-color:#bb1010">On</button></td>
-                <td><button>C</button></td>
-                <td><button>/</button></td>
-                <td><button>X</button></td>
+                <td><button onclick="ligar()" style="background-color:#bb1010">On</button></td>
+                <td><button onclick="limpar()">C</button></td>
+                <td><button onclick="numero('/')">/</button></td>
+                <td><button onclick="numero('*')">X</button></td>
             </tr>
             <tr>
-                <td><button>7</button></td>
-                <td><button>8</button></td>
-                <td><button>9</button></td>
-                <td><button>-</button></td>
+                <td><button onclick="numero(7)">7</button></td>
+                <td><button onclick="numero(8)">8</button></td>
+                <td><button onclick="numero(9)">9</button></td>
+                <td><button onclick="numero('-')">-</button></td>
             </tr>
             <tr>
-                <td><button>4</button></td>
-                <td><button>5</button></td>
-                <td><button>6</button></td>
-                <td><button>+</button></td>
+                <td><button onclick="numero(4)">4</button></td>
+                <td><button onclick="numero(5)">5</button></td>
+                <td><button onclick="numero(6)">6</button></td>
+                <td><button onclick="numero('+')">+</button></td>
             </tr>
             <tr>
-                <td><button>1</button></td>
-                <td><button>2</button></td>
-                <td><button>3</button></td>
-                <td rowspan="2"><button style="height:159px">=</button></td>
+                <td><button onclick="numero(1)">1</button></td>
+                <td><button onclick="numero(2)">2</button></td>
+                <td><button onclick="numero(3)">3</button></td>
+                <td rowspan="2"><button onclick="resultado()" style="height:159px">=</button></td>
             </tr>
             <tr>
-                <td colspan="2"><button style="width:169px">0</button></td>
-                <td><button>.</button></td>
+                <td colspan="2"><button onclick="numero(0)" style="width:169px">0</button></td>
+                <td><button onclick="numero('.')">.</button></td>
             </tr>
         </table></center>
     </div>
